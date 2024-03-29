@@ -1,0 +1,15 @@
+name: crewai
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - openai
+      - dotenv
+      - crewai
+      - 'crewai[tools]'
+      - langchain_openai
+      - requests
