@@ -6,8 +6,8 @@ import requests
 
 api_url = "https://api.longevity-genie.info/"
 
-@tool("genetic_tool")
-def genetic_tool(input: str) -> str:
+@tool("gene_tool")
+def gene_tool(input: str) -> str:
     """
     A tool to answer questions about genes.
 
