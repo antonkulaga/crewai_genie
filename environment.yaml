@@ -13,3 +13,4 @@ dependencies:
       - 'crewai[tools]'
       - langchain_openai
       - requests
+      - xmltodict
