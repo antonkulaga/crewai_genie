@@ -21,7 +21,9 @@ class biology_crew_tasks():
             agent=agent,
             context=context,
             async_execution=True,
-            expected_output=""" The MTOR gene, known as the mechanistic target of rapamycin,
+            expected_output=""" Summarised information that you have about the gene that was asked about by a user.
+            The example of output for the question "What influence on longevity does the MTOR gene have?":
+            "The MTOR gene, known as the mechanistic target of rapamycin,
             plays a significant role in cellular responses to stresses such as DNA damage
             and nutrient deprivation. This protein acts as the target for the cell-cycle
             arrest and immunosuppressive effects of the FKBP12-rapamycin complex. Studies
@@ -46,7 +48,7 @@ class biology_crew_tasks():
             forms of cancer, and neurological and psychiatric disorders, indicating
             its complex role in human health and disease.
             For more detailed information, please visit the NCBI MTOR
-            gene page(here is the link to the page).
+            gene page(here is the link to the page)."
             """
         )
 
