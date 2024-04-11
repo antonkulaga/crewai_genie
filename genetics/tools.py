@@ -2,7 +2,7 @@ import os
 import sys
 from langchain.tools import tool
 import requests
-
+from loguru import logger
 
 api_url = "https://api.longevity-genie.info/"
 
@@ -18,8 +18,8 @@ def gene_tool(input: str) -> str:
     - results_from_api_calls: a text with information about the gene
     """
     response = requests.get(api_url+"gene_lookup/"+ input)
-    print("\n\nSearching for...\n\n" + input)
-    return response.json()
+    result = response.json()
+    return result
 
 @tool("rsid_tool")
 def rsid_tool(input: str) -> str:
@@ -33,5 +33,5 @@ def rsid_tool(input: str) -> str:
     - results_from_api_calls: a text with information about the rsid
     """
     response = requests.get(api_url+"rsid_lookup/"+ input)
-    print("\n\nSearching for...\n\n" + input)
-    return response.json()
+    result = response.json()
+    return result
